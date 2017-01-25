@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.sales">
+  <class name="Meeting" table="meetings">
+  <id name="meeting_id" column="meeting_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="subject" column="subject" type="string"></property>
+  <property name="date" column="date" type="string"></property>
+  <property name="duration" column="duration" type="string"></property>
+  <property name="attendies" column="attendies" type="string"></property>
+  <property name="responsible" column="responsible" type="integer"></property>
+  <property name="location" column="location" type="string"></property>
+  <property name="description" column="description" type="string"></property>
+  <property name="created_by" column="created_by" type="integer"></property>
+  <property name="updated_by" column="updated_by" type="integer"></property>
+  <property name="attendees_names" column="attendees_names" type="string"></property>
+  </class>
+</hibernate-mapping>

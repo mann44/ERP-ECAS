@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">mann</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ecas-database</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="hibernate_files/user_mgmt/role.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/user_mgmt/country.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/user_mgmt/state.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/user_mgmt/city.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/user_mgmt/User_master.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/user_mgmt/privilege.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/user_mgmt/privilege_comp.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/user_mgmt/assignRight.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/title.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/company.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/customer.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/categories.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/priority.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/leads.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/phone_category.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/scheduled_calls.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/logged_calls.hbm.xml"></mapping>
+         <mapping resource="hibernate_files/sales/meeting.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/product_type.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/product_category.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/product.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/item.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/item_size.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/supplier_company.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/supplier.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/quotation_detail.hbm.xml"></mapping>
+        <mapping resource="hibernate_files/purchase/p_quotation.hbm.xml"></mapping>
+         
+         
+    </session-factory>
+</hibernate-configuration>

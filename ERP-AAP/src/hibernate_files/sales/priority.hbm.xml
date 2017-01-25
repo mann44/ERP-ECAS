@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.sales">
+  <class name="Priority" table="priorities">
+  <id name="priority_id" column="priority_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="priority" column="priority" type="string"></property>
+  </class>
+</hibernate-mapping>

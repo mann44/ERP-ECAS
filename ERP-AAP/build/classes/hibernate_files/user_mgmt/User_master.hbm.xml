@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.user_mgmt">
+  <class name="UserMaster" table="web_user_master">
+  <id name="user_id" column="user_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="login_id" column="login_id" type="string"></property>
+  <property name="password" column="password" type="string"></property>
+  <property name="full_name" column="full_name" type="string"></property>
+  <property name="role_type" column="role_type" type="integer"></property>
+  <property name="created_by" column="created_by" type="integer"></property>
+  <property name="gender" column="gender" type="string"></property>
+  <property name="birth_dt" column="birth_dt" type="string"></property>
+  <property name="email" column="email" type="string"></property>
+  <property name="address" column="address" type="string"></property>
+  <property name="country" column="country" type="integer"></property>
+  <property name="state" column="state" type="integer"></property>
+  <property name="city" column="city" type="integer"></property>
+  <property name="contact_no" column="contact_no" type="string"></property>
+  <property name="internal_note" column="internal_note" type="string"></property>
+  <property name="acc_lock" column="acc_lock" type="string"></property>
+  <property name="active_flag" column="active_flag" type="string"></property>
+  <property name="assign_rights" column="assign_rights" type="string"></property>
+  <property name="updated_by" column="updated_by" type="integer"></property>
+  </class>
+</hibernate-mapping>

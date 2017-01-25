@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+  <class name="bean.user_mgmt.Role" table="web_gen_role_mst">
+  <id column="role_id" name="r_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="role" column="role_name" type="string"></property>
+  <property name="role_desc" column="role_desc" type="string"></property>
+  <property name="created_by" column="created_by" type="integer"></property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.purchase">
+  <class name="P_Quotation" table="purchase_quotation">
+  <id name="quotation_id" column="quotation_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="supplier" column="supplier" type="integer"></property>
+  <property name="supplier_ref" column="supplier_ref" type="string"></property>
+  <property name="order_dt" column="order_dt" type="string"></property>
+  <property name="expected_dt" column="expected_dt" type="string"></property>
+  <property name="untaxted_amount" column="untaxted_amount" type="double"></property>
+  <property name="taxes" column="taxes" type="double"></property>
+  <property name="total" column="total" type="double"></property>
+  <property name="created_by" column="created_by" type="integer"></property>
+  <property name="updated_by" column="updated_by" type="integer"></property>
+  <property name="status" column="status" type="string"></property>
+  </class>
+</hibernate-mapping>

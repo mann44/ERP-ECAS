@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.user_mgmt">
+  <class name="AssignRight" table="assign_rights">
+  <id name="rights_id" column="rights_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="role_id" column="role_id" type="integer"></property>
+  <property name="user_id" column="user_id" type="integer"></property>
+  <property name="privilege_ids" column="privilege_ids" type="string"></property>
+  </class>
+</hibernate-mapping>

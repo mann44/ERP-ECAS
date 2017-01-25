@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.purchase">
+  <class name="Quotation_Detail" table="purchase_quotation_detail">
+  <id name="detail_id" column="detail_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="quotation_id" column="quotation_id" type="integer"></property>
+  <property name="product" column="product" type="integer"></property>
+  <property name="item" column="item" type="integer"></property>
+  <property name="description" column="description" type="string"></property>
+  <property name="schedule_dt" column="schedule_dt" type="string"></property>
+  <property name="quantity" column="quantity" type="double"></property>
+  <property name="unit_price" column="unit_price" type="double"></property>
+  <property name="taxs" column="taxs" type="double"></property>
+  <property name="subtotal" column="subtotal" type="double"></property>
+  </class>
+</hibernate-mapping>

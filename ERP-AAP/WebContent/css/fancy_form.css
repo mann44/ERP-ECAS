@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+  body{
+  	overflow:hidden;
+  }
+  
+  .form_header{
+  background-color:#CDCDCD;
+  height:85px;
+  }
+  

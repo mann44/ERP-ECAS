@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+  <class name="bean.user_mgmt.City" table="city">
+  <id name="city_id" column="city_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="country_id" column="country_id" type="integer"></property>
+  <property name="state_id" column="state_id" type="integer"></property>
+  <property name="city_name" column="city_name" type="string"></property>
+  </class>
+</hibernate-mapping>

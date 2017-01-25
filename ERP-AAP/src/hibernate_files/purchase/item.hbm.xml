@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.purchase">
+  <class name="Item" table="items">
+  <id name="item_id" column="item_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="product" column="product" type="integer"></property>
+  <property name="product_type" column="product_type" type="integer"></property>
+  <property name="product_category" column="product_category" type="integer"></property>
+  <property name="item" column="item" type="string"></property>
+  <property name="description" column="description" type="string"></property>
+  <property name="active_flag" column="active_flag" type="string"></property>
+  <property name="created_by" column="created_by" type="integer"></property>
+  <property name="updated_by" column="updated_by" type="integer"></property>
+  </class>
+</hibernate-mapping>

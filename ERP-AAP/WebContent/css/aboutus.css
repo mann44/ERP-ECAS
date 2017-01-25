@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+.homepage6{
+    background-color: #fcfcfc;
+     height: 651px; width: 1000px;
+     border: 1px solid darkgray;
+     border-radius: 10px;
+}
+
+.homepage5{
+    width: 290px; margin-left: 47px;margin-top: 36px; float: left; height: 180px;
+    border-radius: 5px;
+    border: 13px solid #7d7d7d;
+}
+
+.homepage{
+    margin-top: 44px;
+    margin-left: 274px;
+}
+
+.homepagesmall{
+	background-color: #fcfcfc;
+     height: 200px; width: 100%;
+     border: 1px solid darkgray;
+}
+
+.font1{
+    padding-left: 45px; padding-top: 15px; color: 
+#C5D52B;
+text-shadow: 0 0 6px rgba(197, 213, 42, 0.5); font-size: 34px;  font-family: 'DeliusSwashCapsRegular'; font-weight: bold;}
+
+
+.paragraph{
+  
+    margin-top: 42px;
+    width:702px;
+    line-height: 24px;
+    float: left;
+    margin-left: 63px;
+    text-align: justify;
+    color: #666;
+    font-family: verdana;
+    font-size: 13px;
+}
+
+.paragraph1{
+    line-height: 24px;
+    font-size: 13px;
+    font-family: verdana;
+    float: left;
+    margin-top: 38px;
+    width: 535px;
+    margin-left: 30px;
+    text-align: justify;
+    color: #666;
+}
+

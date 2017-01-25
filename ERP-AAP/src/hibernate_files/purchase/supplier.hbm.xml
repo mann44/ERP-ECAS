@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.purchase">
+  <class name="Supplier" table="web_supplier_mst">
+  <id name="supplier_id" column="supplier_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="supplier_name" column="supplier_name" type="string"></property>
+  <property name="description" column="description" type="string"></property>
+  <property name="email_id" column="email_id" type="string"></property>
+  <property name="is_company" column="is_company" type="string"></property>
+  <property name="company_id" column="company_id" type="integer"></property>
+  <property name="phone_no" column="phone_no" type="string"></property>
+  <property name="mobile_no1" column="mobile_no1" type="string"></property>
+  <property name="mobile_no2" column="mobile_no2" type="string"></property>
+  <property name="website" column="website" type="string"></property>
+  <property name="active_flag" column="active_flag" type="string"></property>
+  <property name="created_by" column="created_by" type="integer"></property>
+  <property name="address" column="address" type="string"></property>
+  <property name="country" column="country" type="integer"></property>
+  <property name="state" column="state" type="integer"></property>
+  <property name="city" column="city" type="integer"></property>
+  <property name="job_position" column="job_position" type="string"></property>
+  <property name="title" column="title" type="integer"></property>
+  <property name="fax" column="fax" type="string"></property>
+  <property name="updated_by" column="updated_by" type="integer"></property>
+  </class>
+</hibernate-mapping>

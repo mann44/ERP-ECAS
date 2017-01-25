@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean.sales">
+  <class name="Lead" table="web_leads_mst">
+  <id name="lead_id" column="lead_id" type="integer">
+  <generator class="native"></generator>
+  </id>
+  <property name="subject" column="subject" type="string"></property>
+  <property name="lead_dt" column="lead_dt" type="string"></property>
+  <property name="customer_id" column="customer_id" type="integer"></property>
+  <property name="contact_name" column="contact_name" type="string"></property>
+  <property name="title" column="title" type="integer"></property>
+  <property name="category" column="category" type="integer"></property>
+  <property name="priority" column="priority" type="integer"></property>
+  <property name="address" column="address" type="string"></property>
+  <property name="email" column="email" type="string"></property>
+  <property name="fax" column="fax" type="string"></property>
+  <property name="phone_no" column="phone_no" type="string"></property>
+  <property name="mobile_no1" column="mobile_no1" type="string"></property>
+  <property name="mobile_no2" column="mobile_no2" type="string"></property>
+  <property name="description" column="description" type="string"></property>
+  <property name="created_by" column="created_by" type="integer"></property>
+  <property name="updated_by" column="updated_by" type="integer"></property>
+  <property name="stage" column="stage" type="string"></property>
+  </class>
+</hibernate-mapping>
